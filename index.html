@@ -24,29 +24,31 @@
 
 <body>
 
+<!--Inicio da NavBar--> 
 <div id="nav-container">
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">    
-    <a class="navbar-brand" href="#"> 
-       <img id="logo" src="src/assets/images/LOGO-WDR.png" alt="Premium-Mind">
-     </a>
-</nav>
-
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">    
+        <a class="navbar-brand" href="#"> 
+          <img id="logo" src="src/assets/images/LOGO-WDR.png" alt="Premium-Mind">
+        </a>
+    </nav>
 </div>
+<!--Fim da NavBar--> 
 
-<nav class="main-menu">
+<!--Inicio do Menu Principal--> 
+<nav class="main-menu fixed">
 
     <div class="settings"></div>
     <div class="scrollbar" id="style-1">
+  
           
-    <ul>
+   <ul>
       
-    <li>                                   
-       <a href="#">
-        <i class="fa fa-home fa-lg"></i>
-        <span class="nav-text">Início</span>
-       </a>
-    </li>   
+           <li>                                   
+              <a href="#">
+              <i class="fa fa-home fa-lg"></i>
+              <span class="nav-text">Início</span>
+             </a>
+            </li>   
        
     <li>                                 
       <a id="mostra-ou-esconder" href="#">
@@ -67,94 +69,107 @@
          <i class="fa fa-edit fa-lg"></i>
          <span class="nav-text">Cadastar Utilizador</span>
         </a>
-     </li> 
+    </li> 
      
     </div>
       
     </ul>                            
     
+    <!--Footer-->
     <ul class="rodape">
-    <li id="footer-bottom">
-    <a href="https://www.premium-minds.com/">
-    <i class="fa fa-lightbulb-o fa-lg"></i>
-    <span class="nav-text"> 2024 &copysr; Premium-minds.com </span>
-    </a>
-    </li>  
-    </ul>
-    </nav> 
+        <li id="footer-bottom">
+           <a href="https://www.premium-minds.com/">
+              <i class="fa fa-lightbulb-o fa-lg"></i>
+             <span class="nav-text" id="myfooter"> 2024 &copysr; Premium-minds.com </span>
+           </a>
+        </li>  
+   </ul>
+
+</nav> 
+<!--Fim do Menu Principal-->   
     
-   <!--Inicio Painel--> 
+   <!--Inicio do Formulario do Utilizador--> 
 
    <div class="container" id="featured-container">
-    <div class="col-12">
-        <h2 class="title primary-color">Utilizador</h2>
-        <p class="d-flex p-4">
-            <a class="btn btn-light" id="maintitle" data-bs-toggle="collapse" role="button" href="#collapseType" aria-expanded="true" aria-controls="collapseForm">
-               <span>Tipo de Utilizador</span>
-            </a>
-        </p>
-          <div class="collapse p-4" id="collapseType">
-            
-                <div class="login-box">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
-                        Project Manager
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Developer
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Architect
-                      </label>
-                    </div>
-                  </ul>
-                    </div>
-            
-        </div>
-        
-        <p class="d-flex p-4">
-            <a class="btn btn-light" id="maintitle" data-bs-toggle="collapse" href="#collapseForm" aria-expanded="true" aria-controls="collapseForm">
-                <i class="bi bi-dash-lg"></i>
-                <span>Contacto</span>
-                <i class="bi bi-dash-lg"></i>
-            </a>
-        </p>
-          <div class="collapse" id="collapseForm">
-              <div class="login-box">
-                    <form>
-                      <div class="user-box">
-                        <input type="text" name="" placeholder="pm@premium-minds.com">
-                        <label>Email</label>
+      <div class="col-12">
+          <h2 class="title primary-color">Utilizador</h2>
+          
+                <div class="card-header">
+                  <a href="#collapseType" class="btn btn-light" id="maintitle" data-bs-toggle="collapse">
+                    <span>Tipo de Utilizador</span>
+                  </a>
+                </div>
+              
+                <div id="collapseType" class="collapse">
+                      <div class="card-body no-padding">
+                        <div class="login-box">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              Project Manager
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Developer
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                              Architect
+                            </label>
+                          </div>
+                        </ul>
+                          </div>
                       </div>
-                      <div class="user-box">
-                        <input type="password" name="" placeholder="••••••••">
-                        <label>Palavra-passe</label>
+                </div>  
+                
+                
+                <!--form-->
+                <div class="card-header">
+                  <a href="#collapseForm" class="btn btn-light" id="maintitle" data-bs-toggle="collapse">
+                    <span>Cantacto</span>
+                  </a>
+                </div>
+              
+                <div id="collapseForm" class="collapse">
+                      <div class="card-body no-padding">
+                        <div class="login-box">
+                          <form>
+                            <div class="conteudo">
+                            <div class="user-box">
+                              <input type="text" class="input-50" name="" placeholder="pm@premium-minds.com">
+                              <label>Email</label>
+                            </div>
+                            <div class="user-box">
+                              <input type="password" class="input-50" name="" placeholder="••••••••">
+                              <label>Palavra-passe</label>
+                            </div>
+                          </div>   
+                            <div class="user-box">
+                              <input type="text" name="" placeholder="+351">
+                              <label>Telefone</label>
+                            </div>
+                               
+                          </form>
+                                         
+                        </div>                      
+                  </div>
+
+                 
                       </div>
-                      <div class="user-box">
-                        <input type="password" name="" placeholder="+351">
-                        <label>Telefone</label>
+
+                      <div class="col-lg-11.9" id="mybutton">
+                        <button type="button" class="main-btn" id="cancelar">Cancelar</button>
+                        <button type="button" class="main-btn">Guardar</button>
                       </div>
-                    </form>
-                    </div>
-            </div>
-      
-    </div>
-
-</div>
-
-  <!--Fim Painel--> 
-
-      
-      
-
-</div>  
+                </div> 
+          </div>
+ </div>
+ 
+   </div>
 <!--Bootstrap Js-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
